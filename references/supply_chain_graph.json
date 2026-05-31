@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "AI 硬件产业链知识图谱 — Serenity(@aleabitoreddit) 覆盖版",
+    "built_from": "6192 条全档案推文蒸馏 + 原文验证",
+    "as_of": "2026-05-31",
+    "stance_legend": {
+      "core_long": "高信念核心长持仓",
+      "satellite": "卫星仓/线索仓(小仓或观察)",
+      "short_avoid": "主动看空或规避",
+      "signal_only": "当信号源/需求端,非主要持仓",
+      "demand_source": "需求终端+资金源头"
+    },
+    "note": "倍数/市值为 Serenity 本人推文自述,非独立核验"
+  },
+  "money_flow_map": "超大厂Capex(GOOGL/META/MSFT/AMZN) → NeoCloud算力(NBIS) → 连接(ALAB/CRDO) → GPU/ASIC(NVDA→AVGO→MRVL) → 存储HBM(MU/SK/三星/SNDK) → 光模块(LITE/COHR/AAOI) → CPO/激光源(SIVE/TSEM/FOCI) → 外延/衬底(IQE→AXTI/SOI) → 原料(日本化学4092/高纯铟) → 代工封装(TSM/AMKR/TOWA) → 功率电力(HPS.A/VRT/XLU) → 核能(LEU/OKLO)",
+  "layers": {
+    "L0_原料化学品": {
+      "desc": "卡点的卡点 —— 最上游原料,中国控盘",
+      "companies": [
+        {"ticker": "4092.T", "name": "Nippon Chemical Industrial", "product": "InP 高纯磷+铟原料", "position": "InP 衬底原料关键供应商", "importance": "卡点的卡点;约 $169M 市值即可控制", "serenity_view": "NCI is the bottleneck of the bottleneck", "stance": "satellite"},
+        {"ticker": "7N-In/P", "name": "7N 高纯铟/磷(大宗)", "product": "InP 衬底原料", "position": "最上游,中国控 70%+", "importance": "用 SMM 现货价创新高作 InP 紧张先行指标", "serenity_view": "盯上海有色网 7N 铟价破历史新高=InP 涨价前兆", "stance": "signal_only"}
+      ]
+    },
+    "L1_衬底晶圆材料": {
+      "desc": "最赚钱板块 —— 化合物半导体衬底/外延",
+      "companies": [
+        {"ticker": "AXTI", "name": "AXT Inc", "product": "InP 衬底(矿物→提纯→生产端到端)", "position": "控 40%+ InP,与 Sumitomo 双寡头(60-70%)", "importance": "AI buildout 的 single point of failure;中国出口管制+特朗普EO 迫 Emcore 剥离→准垄断", "serenity_view": "旗舰命中,~$500M→$9.2B(10x+)", "stance": "core_long", "multiple": "10x+"},
+        {"ticker": "SMTOY", "name": "Sumitomo Electric", "product": "InP 衬底", "position": "InP 双寡头另一极", "importance": "与 AXTI 共控 InP 衬底供给", "serenity_view": "bottlenecked by two companies: AXTI + SMTOY", "stance": "satellite"},
+        {"ticker": "IQE", "name": "IQE plc", "product": "InP/化合物外延片(epiwafer)", "position": "衬底→激光的外延环节;LITE 已知供应商", "importance": "$179M 对标台 LandMark $3.5B;qualification cycle 是隐藏价值", "serenity_view": "Point72/UBS 在 ATH 买入验证;YTD 峰 +837%", "stance": "core_long"},
+        {"ticker": "SOI", "name": "Soitec", "product": "SOI/硅光衬底", "position": "CPO 硅光路线西方虚拟垄断", "importance": "AXTI 的硅光镜像;TSEM 2.9亿预付锁产能传导", "serenity_view": "€43→$181(4x+)", "stance": "core_long", "multiple": "4x+"},
+        {"ticker": "5333.T", "name": "NGK Insulators(碍子)", "product": "薄膜铌酸锂(TFLN)晶圆", "position": "下一代光调制材料衬底", "importance": "TFLN 调制器领域实质性垄断;光通信下一代", "serenity_view": "中日文披露: 稳拿 TFLN 晶圆领域,列为'实质性垄断'标的", "stance": "satellite", "source": "cjk"}
+      ]
+    },
+    "L2_激光光源": {
+      "desc": "CPO 最深卡点 —— 激光器与外延设备",
+      "companies": [
+        {"ticker": "SIVE", "name": "Sivers Semiconductors", "product": "InP CW DFB 激光阵列(ELS)", "position": "全球少数 DFB 供应商;供 JBL 1.6T/MRVL/Ayar", "importance": "CPO 超级周期最清晰拐点;首 3 月营收 +77%", "serenity_view": "头号旗舰仓,once-a-generation long, I'm not selling a single share;$140M→~$2.1B", "stance": "core_long", "multiple": "~15x"},
+        {"ticker": "LITE", "name": "Lumentum", "product": "EML/VCSEL+光模块+空芯光纤", "position": "控 EML 供给;GOOGL TPU 供应商", "importance": "CEO: sold out until end of 2027;NVDA $2B 注资验证", "serenity_view": "$49→$614;隐藏垄断,每个 TPU 都需 LITE", "stance": "core_long"},
+        {"ticker": "COHR", "name": "Coherent", "product": "EML 激光+金刚石散热衬底", "position": "与 LITE 并列激光卡点", "importance": "Safest Longs 之一", "serenity_view": "MRVL 和 COHR 是 the Deloitte of Semis", "stance": "core_long"},
+        {"ticker": "MTSI", "name": "MACOM", "product": "CW 激光/RF 光器件", "position": "SIVE 估值锚", "importance": "投 $45M 入股 IQE 入董=验证 epiwafer 卡点", "serenity_view": "用作 SIVE 可比锚", "stance": "satellite"},
+        {"ticker": "ALRIB.PA", "name": "Riber", "product": "MBE 外延设备", "position": "外延设备双寡头", "importance": "MSFT Quantum 秘密供应商(现场照放大发现)", "serenity_view": "发现后涨 113%", "stance": "satellite"},
+        {"ticker": "VECO", "name": "Veeco", "product": "MOCVD 外延设备", "position": "外延设备双寡头另一极", "importance": "化合物外延产能设备", "serenity_view": "外延设备卡点", "stance": "satellite"},
+        {"ticker": "AIXA", "name": "AIXTRON", "product": "MOCVD 外延设备", "position": "外延设备", "importance": "设备商,爬坡慢", "serenity_view": "刻意回避: 偏好高Beta标的而非AIXA这类设备/慢爬坡股", "stance": "short_avoid", "source": "cjk"}
+      ]
+    },
+    "L3_光模块收发器": {
+      "desc": "光电转换 —— 800G/1.6T 光模块",
+      "companies": [
+        {"ticker": "AAOI", "name": "Applied Optoelectronics", "product": "800G/1.6T 光模块+自有激光 fab", "position": "美国最大 800G/1.6T 产能", "importance": "垂直整合自有激光;H1-2027 $471M 营收建模", "serenity_view": "~$30→$13B(6-7x);$13B 时比 $2B 更看多", "stance": "core_long", "multiple": "6-7x"},
+        {"ticker": "JBL", "name": "Jabil", "product": "1.6T LRO 光模块 ODM", "position": "SIVE 论点核心验证(用 Sivers 光源)", "importance": "INTC 2023 贱卖硅光给 Jabil", "serenity_view": "GTC/OFC 泄露 Jabil 1.6T 用 SIVE 光源", "stance": "satellite"},
+        {"ticker": "POET", "name": "POET Technologies", "product": "光引擎/interposer", "position": "易被设计绕过的伪卡点", "importance": "单客户集中(MRVL)+ designed-out 风险", "serenity_view": "MRVL 取消采购跌46%→做空", "stance": "short_avoid"}
+      ]
+    },
+    "L4_CPO光子代工检测": {
+      "desc": "2026 头号主题 —— CPO 共封装光学;Optical TAM 9X($15b 2026→$154b 2028)",
+      "companies": [
+        {"ticker": "TSEM", "name": "Tower Semiconductor", "product": "硅光/特种代工", "position": "光子学的 TSM", "importance": "top CPO pick", "serenity_view": "两周+63%,40天翻倍", "stance": "core_long", "multiple": "2x"},
+        {"ticker": "3105.TW", "name": "Win Semiconductors", "product": "化合物/激光代工", "position": "坐在几乎所有关键卡点上", "importance": "AVGO 入股成主客户", "serenity_view": "全球最重要代工厂之一", "stance": "satellite"},
+        {"ticker": "6830.TW", "name": "MSSCorps", "product": "CPO 检测", "position": "功能性垄断,目标 90% 份额", "importance": "NVDA/TSM CPO 良率关键", "serenity_view": "CPO 检测垄断", "stance": "satellite"},
+        {"ticker": "3363.TW", "name": "FOCI Fiber Optic", "product": "FAU 光纤阵列单元", "position": "台湾 CPO 隐形供应链", "importance": "预期 50% 市占", "serenity_view": "FAU 卡点", "stance": "satellite"},
+        {"ticker": "6451.TW", "name": "Shunsin", "product": "光封装", "position": "台湾 CPO 隐形供应链", "importance": "光封装环节(日本散户无法买入)", "serenity_view": "CPO 封装,NVDA CPO 链中罕见已 derisk 标的", "stance": "satellite"},
+        {"ticker": "Furukawa", "name": "古河电工(5801.T)", "product": "CPO 光器件/光纤", "position": "CPO 相关", "importance": "机构下一轮轮动方向", "serenity_view": "中日文披露: 下一轮轮动指向 CPO/MTSI/古河电工", "stance": "satellite", "source": "cjk"},
+        {"ticker": "MRVL", "name": "Marvell", "product": "定制 ASIC/光 DSP/CPO ASIC", "position": "连接激光源与超大厂 ASIC", "importance": "财报18%暴跌被视为DCA机会", "serenity_view": "MRVL+COHR=Deloitte of Semis", "stance": "satellite"},
+        {"ticker": "AVGO", "name": "Broadcom", "product": "定制 ASIC/交换芯片", "position": "AI 牛市传导链 NVDA→AVGO→TSM 中间环", "importance": "可 $280-290M 收购 SIVE 控制卡点", "serenity_view": "传导链核心", "stance": "signal_only"}
+      ]
+    },
+    "L5_GPU算力连接": {
+      "desc": "算力本体与连接 —— 多作信号源,偏好上游而非 GPU 本体",
+      "companies": [
+        {"ticker": "NVDA", "name": "NVIDIA", "product": "GPU", "position": "传导链起点+信号源", "importance": "每次注资/发言预示下一卡点(HBM→CoWoS→激光)", "serenity_view": "当信号源,本体多列 Hold/Sell", "stance": "signal_only"},
+        {"ticker": "AMD", "name": "AMD", "product": "GPU/加速器", "position": "GPU 第二供应", "importance": "OpenAI $10Bs 合同 re-rating", "serenity_view": "远期营收重估", "stance": "satellite"},
+        {"ticker": "ALAB", "name": "Astera Labs", "product": "PCIe/CXL retimer 智能互连", "position": "AI 连接", "importance": "76% 利润率,144%+ 增长,客户全 Mag7", "serenity_view": "早期 core,14% 超买后清仓反手做空", "stance": "satellite"},
+        {"ticker": "CRDO", "name": "Credo", "product": "AEC 有源电缆/高速 I/O", "position": "AI 连接,与 ALAB 同段", "importance": "超高增长", "serenity_view": "CES 颜色谣言-25.7%加仓,markets trade off Kindergarten logic", "stance": "core_long"}
+      ]
+    },
+    "L6_存储HBM": {
+      "desc": "内存超级周期 —— 组合曾占 35%",
+      "companies": [
+        {"ticker": "MU", "name": "Micron", "product": "DRAM/HBM/NAND", "position": "美国内存大厂", "importance": "下个 NVDA,fwd P/E 11.6", "serenity_view": "内存超周期核心", "stance": "core_long"},
+        {"ticker": "SNDK", "name": "SanDisk/WDC", "product": "NAND 闪存", "position": "存储供给", "importance": "Q3 营收 $4.6B vs 估 $2.9B 大爆", "serenity_view": "财报爆表", "stance": "core_long"},
+        {"ticker": "000660.KS", "name": "SK Hynix", "product": "HBM/DRAM", "position": "HBM 龙头 Toll Collector", "importance": "fwd P/E 4.3x", "serenity_view": "收费站模式", "stance": "satellite"},
+        {"ticker": "005930.KS", "name": "Samsung", "product": "HBM/DRAM", "position": "存储综合", "importance": "fwd P/E 5.1x", "serenity_view": "Toll Collector", "stance": "satellite"}
+      ]
+    },
+    "L7_代工封装测试": {
+      "desc": "制造底座 —— 代工/先进封装/测试",
+      "companies": [
+        {"ticker": "TSM", "name": "TSMC", "product": "晶圆代工", "position": "底层 monopoly,一切 AI 算力依赖", "importance": "$1.3T→$1.8T,PT $450+", "serenity_view": "被低估的垄断,neocloud 交易中心", "stance": "core_long"},
+        {"ticker": "AMKR", "name": "Amkor", "product": "OSAT 先进封装", "position": "封装环节", "importance": "AI DC 建设受益", "serenity_view": "多次 strong buy", "stance": "core_long"},
+        {"ticker": "6315.T", "name": "TOWA", "product": "HBM4 压缩成型设备", "position": "封装设备垄断", "importance": "HBM4 模塑卡点", "serenity_view": "压缩成型垄断", "stance": "satellite"},
+        {"ticker": "LPK", "name": "(玻璃衬底设备)", "product": "玻璃衬底 TGV 设备", "position": "玻璃基板设备垄断", "importance": "下一代封装基板卡点", "serenity_view": "TGV 设备垄断", "stance": "satellite"},
+        {"ticker": "AEHR", "name": "Aehr Test Systems", "product": "晶圆级测试设备", "position": "测试环节卡点", "importance": "$420 inevitable", "serenity_view": "晶圆级老化测试", "stance": "satellite"},
+        {"ticker": "INTC", "name": "Intel", "product": "CPU/代工", "position": "美国国家半导体臂", "importance": "国家战略代工", "serenity_view": "国家臂", "stance": "satellite"},
+        {"ticker": "CPSH", "name": "CPS Technologies", "product": "AlSiC 散热", "position": "散热材料", "importance": "封装散热", "serenity_view": "散热卡点", "stance": "satellite"}
+      ]
+    },
+    "L8_功率电力能源": {
+      "desc": "AI 数据中心电力主题 —— 功率半导体/变压器/电力/核",
+      "companies": [
+        {"ticker": "HPS.A", "name": "Hammond Power Solutions", "product": "变压器", "position": "电力设备", "importance": "23% 份额,DPA 总统令受益", "serenity_view": "变压器卡点", "stance": "satellite"},
+        {"ticker": "NVTS", "name": "Navitas", "product": "GaN/800VDC 功率", "position": "功率半导体", "importance": "800VDC 架构", "serenity_view": "功率半导体新主题", "stance": "satellite"},
+        {"ticker": "WOLF", "name": "Wolfspeed", "product": "SiC 功率/衬底", "position": "SiC 卡点", "importance": "SiC 衬底+功率", "serenity_view": "SiC", "stance": "satellite"},
+        {"ticker": "XFAB", "name": "X-FAB", "product": "800VDC 功率代工", "position": "功率代工", "importance": "800VDC", "serenity_view": "功率代工", "stance": "satellite"},
+        {"ticker": "XLU", "name": "Utilities ETF", "product": "公用事业", "position": "电力需求总量", "importance": "2 年 LEAPS,IV 仅 14%", "serenity_view": "低 IV 买长 call", "stance": "satellite"},
+        {"ticker": "LEU", "name": "Centrus Energy", "product": "HALEU 核燃料", "position": "核燃料唯一卡点", "importance": "HALEU 唯一供应", "serenity_view": "核燃料卡点", "stance": "satellite"},
+        {"ticker": "VRT", "name": "Vertiv", "product": "数据中心电力/散热", "position": "DC 基础设施", "importance": "电力散热集成", "serenity_view": "DC 电力", "stance": "satellite"},
+        {"ticker": "FLNC", "name": "Fluence Energy", "product": "储能", "position": "高风险能源玩法", "importance": "逢跌 DCA", "serenity_view": "高风险能源", "stance": "satellite"}
+      ]
+    },
+    "L9_NeoCloud算力运营": {
+      "desc": "Hyperscaler Capex Funnel —— 早期最高信念主题",
+      "companies": [
+        {"ticker": "NBIS", "name": "Nebius", "product": "NeoCloud/算力租赁", "position": "Mag7 合同型(MSFT 17B)", "importance": "下个微软/谷歌,Margins>Capacity", "serenity_view": "最早核心仓,~$87→3x,1Y PT $400", "stance": "core_long", "multiple": "~3x"},
+        {"ticker": "CIFR", "name": "Cipher Mining", "product": "BTC miner pivot AI", "position": "矿工转型算力", "importance": "$3B 10年合同", "serenity_view": "获利后清仓集中进 NBIS", "stance": "satellite"},
+        {"ticker": "IREN", "name": "IREN Ltd", "product": "BTC miner pivot AI", "position": "矿工转型算力", "importance": "需持续增发稀释", "serenity_view": "多→空翻转,稀释机器", "stance": "short_avoid"},
+        {"ticker": "BITF", "name": "Bitfarms", "product": "BTC miner pivot AI", "position": "矿工转型算力", "importance": "投机篮子", "serenity_view": "50-100%+ 获利后清仓", "stance": "satellite"}
+      ]
+    },
+    "L10_超大厂需求源": {
+      "desc": "需求终端+资金源头 —— capex 洪流起点",
+      "companies": [
+        {"ticker": "GOOGL", "name": "Alphabet", "product": "TPU/云", "position": "需求源+TPU 自研(供应链终点)", "importance": "TPU v7 拉动 LITE", "serenity_view": "资金源头+财报blowout看多", "stance": "demand_source"},
+        {"ticker": "META", "name": "Meta", "product": "AI capex", "position": "需求源", "importance": "capex 故事不变", "serenity_view": "回调买 call", "stance": "demand_source"},
+        {"ticker": "MSFT", "name": "Microsoft", "product": "Azure/AI capex", "position": "需求源+NBIS 合同方", "importance": "17B NBIS 合同", "serenity_view": "需求源", "stance": "demand_source"},
+        {"ticker": "AMZN", "name": "Amazon", "product": "AWS/AI capex", "position": "需求源", "importance": "受关税影响小,回调买", "serenity_view": "需求源", "stance": "demand_source"}
+      ]
+    },
+    "L11_应用与相邻主题": {
+      "desc": "应用层与相邻投机/价值主题",
+      "companies": [
+        {"ticker": "RPI", "name": "(边缘 AI 硬件)", "product": "边缘 AI agent 硬件", "position": "应用层", "importance": "~3x", "serenity_view": "边缘 AI", "stance": "satellite", "multiple": "~3x"},
+        {"ticker": "RKLB", "name": "Rocket Lab", "product": "火箭/太空", "position": "相邻 moonshot", "importance": "5年高信念,PT $500", "serenity_view": "长期核心,$16成本", "stance": "core_long"},
+        {"ticker": "CRCL", "name": "Circle", "product": "USDC 稳定币", "position": "金融相邻", "importance": "私人部门美联储,$18B市值10x+空间", "serenity_view": "1月+148%", "stance": "satellite"},
+        {"ticker": "HIMS", "name": "Hims & Hers", "product": "远程医疗", "position": "轧空主题", "importance": "42%+ float 被空+高增长", "serenity_view": "可能复制 OPEN/GME 轧空", "stance": "satellite"},
+        {"ticker": "6324.T", "name": "Harmonic Drive Systems", "product": "谐波减速器(机器人关节)", "position": "人形机器人关节卡点", "importance": "机器人运动核心部件;亲赴日本实地调研", "serenity_view": "中日文披露: 日本 Harmonic Drive 调研进展顺利", "stance": "satellite", "source": "cjk"},
+        {"ticker": "SSYS", "name": "Stratasys", "product": "3D 打印(人形机器人骨架)", "position": "人形机器人骨架制造", "importance": "供 Boston Dynamics Atlas/Meta 人形机器人骨架", "serenity_view": "中日文披露: 承担所有人型机器人机体骨架", "stance": "satellite", "source": "cjk"}
+      ]
+    }
+  },
+  "confirmed_supply_edges": [
+    {"from": "4092.T", "to": "AXTI", "relation": "原料供应(InP磷)", "verified": "推文: NCI is the bottleneck of AXTI"},
+    {"from": "AXTI", "to": "IQE", "relation": "衬底供应", "verified": "原文: $AXTI is a known supplier of $IQE"},
+    {"from": "IQE", "to": "LITE", "relation": "外延片供应", "verified": "原文: $IQE is a known supplier of $LITE"},
+    {"from": "LITE", "to": "GOOGL", "relation": "光器件供应", "verified": "原文: $LITE is a known $GOOGL supplier"},
+    {"from": "SIVE", "to": "JBL", "relation": "激光源供应", "verified": "推文: Jabil 1.6T 用 Sivers 光源"},
+    {"from": "SIVE", "to": "MRVL", "relation": "激光源供应", "verified": "推文: SIVE 供 MRVL/Ayar"},
+    {"from": "MTSI", "to": "IQE", "relation": "战略入股(验证epiwafer卡点)", "verified": "推文: MTSI $45M 入股 IQE 入董"},
+    {"from": "SOI", "to": "TSEM", "relation": "衬底供应(2.9亿预付锁产能)", "verified": "推文: TSEM 预付 Soitec"},
+    {"from": "AVGO", "to": "3105.TW", "relation": "战略入股成主客户", "verified": "推文: AVGO 入股 Win Semi"},
+    {"from": "NBIS", "to": "MSFT", "relation": "算力合同(17B)", "verified": "推文: MSFT 17B NBIS 合同"},
+    {"from": "GOOGL", "to": "demand", "relation": "TPU 需求拉动光链", "verified": "推文: TPU v7 拉动 LITE"}
+  ]
+}

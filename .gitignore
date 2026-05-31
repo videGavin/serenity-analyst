@@ -1,0 +1,18 @@
+# Credentials — NEVER commit
+.env
+*.env
+!.env.example
+*bearer*
+*token*
+*secret*
+**/bt.txt
+
+# Raw data dumps (large; person's full tweet archive — keep local, not published)
+raw/
+tweets_all.json
+x_archive.json
+
+# OS / editor
+.DS_Store
+node_modules/
+*.log
