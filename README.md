@@ -51,6 +51,28 @@ Just ask, e.g.:
 
 The skill reads the bundled knowledge base, applies the 7-step framework, and returns a structured thesis (with an NFA note).
 
+## Example output
+
+**Q:** *CoWoS is expanding from AI GPUs to HPC and high-end networking chips; Hybrid Bonding is expanding from HBM to 3D-stacked logic; CPO gets a commercial timeline (2027-2028). Advanced-packaging equipment is the fastest-growing WFE sub-segment in 2026 (~35% YoY). Which stocks benefit?*
+
+**A (abridged — full version in [`examples/advanced-packaging-case.md`](examples/advanced-packaging-case.md)):**
+
+He literally posted a *"Bottleneck ETF"* (2026-02-12) for exactly this chain — `$LITE / $AMKR / DISCO / $GLW / $COHR / $ONTO / $CAMT / $TSM / $KLAC / $APH`. Ranked by his preference:
+
+| Tier | Tickers | Why |
+|---|---|---|
+| **① Core (he holds, on his 100-1000% list)** | **$LPK** (glass-TGV equip.), **Unimicron** (CoWoS carrier), **$AEHR** (test), **Nitto Boseki** (T-Glass) | chokepoint + already paid off |
+| **② Back-end equipment duopolies (architecture-agnostic)** | **$BESI** (hybrid bonding), **TOWA/6315** (molding), **$DISCO** (dicing) | benefit whoever wins the packaging race |
+| **③ "Complexity tax" (highest certainty)** | **$ONTO / $CAMT / $FORM** | inspection/test intensity rises with every new package type |
+| **④ New-category early entry (2027-28)** | glass chain **$LPK > $GLW > $NBCLF > $ONTO** | equipment orders first, revenue ramps 2027 |
+| **⑤ HBM4 pure-play** | $ADEA (bonding-IP royalty), $FORM, Auros (322310) | $MU / SK / Samsung capex |
+| **⑥ CPO test (2027-28)** | $FORM, Advantest (6857), $KEYS, MSScorps (6830) | CPO yield / alignment bottleneck |
+| **⑦ Big exposure, lower preference** | $AMKR / $ASX (OSAT, low margins); **$AIXA he avoids** | — |
+
+Two Serenity-specific tells: he prefers **equipment/materials chokepoints over OSAT** (pricing power), and he flags **equipment as strongly cyclical** — thesis breaks when packaging/WFE capex growth peaks (he took a real short-term -20% hit on TOWA and used it to preach "direction right ≠ timing right"). Value on comparable in-layer market cap, **never P/E**. NFA.
+
+> Every name above is sourced to a dated quote from his posts — see the full example for the receipts.
+
 ## Live data (optional)
 
 `scripts/search_serenity.mjs` pulls his **current** posts on a ticker via the official X API. Credentials are read **only from environment variables** — nothing is hardcoded.
